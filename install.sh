@@ -1,7 +1,12 @@
 #!/usr/bin/env bash
 
 set -v
-brew install wget
+if ! which cmake > /dev/null; then
+  brew install cmake
+fi
+if ! which wget > /dev/null; then
+  brew install wget
+fi
 if ! which zsh > /dev/null; then
 	brew install zsh
 fi
