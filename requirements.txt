@@ -3,4 +3,5 @@ pandas
 dlib
 opencv-python
 scikit-learn
+aqrgparse
 git+git://github.com/cmusatyalab/openface.git#egg=openface
