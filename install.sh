@@ -6,7 +6,7 @@ if ! which zsh > /dev/null; then
 	brew install zsh
 fi
 if ! ls miniconda.sh > /dev/null; then
-	wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O ./miniconda.sh
+	curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -o ./miniconda.sh
 fi
 sh miniconda.sh -p /usr/local/share/miniconda3/ -b -f
 echo 'export PATH="/usr/local/share/miniconda3/bin:$PATH"' >> ~/.zshrc
