@@ -1,25 +1,26 @@
-# Setup instructions
+# Setup instructions *macOS-only*
 
-## Torch: http://torch.ch/docs/getting-started.html
-* `./clean.sh` (in the torch folder)
-* `./install-deps` (in the torch folder)
-* `./install.sh` (in the torch folder)
-* Add install/bin to PATH
-  - `export PATH="~/XConf_Nov18/torch/install/bin:$PATH"`
-* `luarocks install dpnn`
-* `for NAME in dpnn nn optim optnet csvigo cutorch cunn fblualib torchx tds; do luarocks install $NAME; done`
+## Assumptions
+* you have `brew` set up
+* you have `zsh` set up
+* you have xcode command line tools; if not run `xcode-select --install`
 
-## Conda and python packages
-* `xcode-select --install`
-* `brew install cmake`
-* Download Miniconda from here (https://conda.io/miniconda.html)
-* `conda create -n xconf python==3.5`
-* IMPORTANT: `conda activate xconf`
-* VERIFY: `conda env list`
-* `pip install -r requirements.txt`
+## Installation
+* Run `./install.sh`
+* Includes setting up miniconda and torch binaries
+
+## Uninstall
+* Run `./clean.sh`
+* Remove `conda` and `torch` references from `~/.zshrc` manually
 
 ## Verify and run
+* Enter the virtual env: `conda activate xconf`
 * VIDEO CAPTURE: `python 1_capture_video.py`
 * DETECT FACES: `python 2_detect_faces.py`
-* TRAIN: `python 6_test_classifier.py train --training_data ./TrainingData`
-* TEST: `python 6_test_classifier.py test --testing_data 0`
+* TRAIN
+  - Create a folder in TrainingData with your name
+  - Place your selfies in the folder
+  - Run `python 5_train_classifier.py`
+* TEST
+  - Coming soon
+  - `python 6_test_classifier.py test --testing_data 0`
