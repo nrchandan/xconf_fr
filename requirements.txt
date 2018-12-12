@@ -1,0 +1,6 @@
+numpy
+pandas
+dlib
+opencv-python
+scikit-learn
+git+git://github.com/cmusatyalab/openface.git#egg=openface
