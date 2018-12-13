@@ -169,7 +169,7 @@ def test(le, clf):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser("Face Recognition Engine")
-    parser.add_argument('mode',
+    parser.add_argument('--mode',
                         type=str,
                         help='train or test',
                         default='test')
@@ -182,4 +182,4 @@ if __name__ == "__main__":
             (le, clf) = pickle.load(f)
         test(le, clf)
 
-    cv2.destroAllWindows()
+    cv2.destroyAllWindows()
