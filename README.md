@@ -8,6 +8,9 @@
 ## Installation
 * Run `./install.sh`
 * Includes setting up miniconda and torch binaries
+* In some cases, you may need to perform these two additional steps:
+  - `brew install libpng`
+  - `xcode-select --install`
 
 ## Verify and run
 * Enter the virtual env: `conda activate xconf`
