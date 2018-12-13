@@ -7,6 +7,7 @@
 
 ## Installation
 * Run `./install.sh`
+* Run `source ~/.zshrc`
 * Includes setting up miniconda and torch binaries
 * In some cases, you may need to perform these two additional steps:
   - `brew install libpng`
