@@ -29,3 +29,11 @@
 ## Uninstall
 * Run `./clean.sh`
 * Remove `conda` and `torch` references from `~/.zshrc` manually
+
+## References
+
+* https://medium.com/@ageitgey/machine-learning-is-fun-part-4-modern-face-recognition-with-deep-learning-c3cffc121d78
+
+## Related Work
+
+* https://github.com/twcbe/known_face_detector
